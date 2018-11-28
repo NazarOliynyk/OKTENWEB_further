@@ -1,0 +1,7 @@
+Worker{id=87, name='Zacharia', monthlyPayment=899.99}
+Worker{id=12, name='Shean', monthlyPayment=1432.02}
+Worker{id=6, name='Aaron', monthlyPayment=2002.33}
+Worker{id=3, name='Lucy', monthlyPayment=2555.22}
+Worker{id=37, name='Molly', monthlyPayment=787.15}
+Worker{id=61, name='Jan', monthlyPayment=2432.0}
+Worker{id=14, name='Richard', monthlyPayment=3005.02}
