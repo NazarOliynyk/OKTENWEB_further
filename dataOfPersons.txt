@@ -1,0 +1,9 @@
+545 Bob 7878.2
+77 John 6689.45
+56 Patrick 4455.00
+33 Morris 3321.89
+8 Ronald 12000.07
+655 Eugine 2255.45
+12 Zacharia 8988.13
+19 Oswald 5008.00
+6 Bruno 9100.00

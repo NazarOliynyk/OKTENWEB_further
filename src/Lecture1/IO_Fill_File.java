@@ -39,6 +39,7 @@ public class IO_Fill_File {
             byte[] bytes = new byte[fileInputStream.available()]; // gives the size of a byte array
             fileInputStream.read(bytes);
             String string = new String(bytes);
+            fileInputStream.close();
             System.out.println(string);
         } catch (IOException e) {
             e.printStackTrace();
