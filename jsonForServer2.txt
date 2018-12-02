@@ -1,0 +1,5 @@
+[
+{"name":"vasia","age":21},
+{"name":"petia","age":32},
+{"name":"yura","age":48}
+]
