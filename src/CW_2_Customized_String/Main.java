@@ -143,19 +143,38 @@ public class Main {
 
         }
         System.out.println(Arrays.toString(strings));
+//
+//        System.out.println(countSymbol("Hello world from Oktenweb", 'o'));
+//
+//        int counter=0;
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            if((int) arr[i]==(int)'o'){
+//                counter=counter+1;
+//            }
+//        }
+//
+//
+//
+//        System.out.println("counter- "+counter);
+//        String s="sdaknf aslk iou nlnl";
+//        String s1=s+"#";
+//        char [] arr1=s1.toCharArray();
+//
+//        int arrLength=0;
+//        while((int)arr1[arrLength]!=(int)'#'){
+//            arrLength++;
+//        }
+//
+//
+//        System.out.println("arrLength- "+arrLength);
+//
+//        System.out.println((int)'a'==(int)'a');
+//        System.out.println((int)'A');
+//        System.out.println((int)'a');
+//
+//        System.out.println(Character.isUpperCase('A'));
+//        System.out.println(Character.isUpperCase(65));
 
-        System.out.println(countSymbol("Hello world from Oktenweb", 'o'));
-
-        int counter=0;
-
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]=='o'){
-                counter=counter+1;
-            }
-        }
-
-
-
-        System.out.println(counter);
     }
 }
