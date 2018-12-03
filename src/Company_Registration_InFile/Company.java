@@ -1,14 +1,24 @@
 package Company_Registration_InFile;
 
+import lombok.Data;
+
 import java.util.TreeSet;
 
 /**
  * Created by okten29 on 11/26/18.
  */
+
 public class Company implements Comparable<Company>{
 
     String name;
     TreeSet<Department> departments;
+
+    public Company() {
+    }
+
+    public Company(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
