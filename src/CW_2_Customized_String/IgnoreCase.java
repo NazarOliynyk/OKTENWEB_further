@@ -45,7 +45,7 @@ public class IgnoreCase {
     }
     public static void main(String[] args) {
 
-        System.out.println(equalsIgnoreCase("OKTENWEB", "oktenweb"));
+        System.out.println(equalsIgnoreCase("OKTenWEB", "oktenweb"));
 
         System.out.println(equalsIgnoreCase("ascjbkj", "knmk"));
 

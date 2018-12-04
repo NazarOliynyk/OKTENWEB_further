@@ -1,8 +1,15 @@
 package Company_Registration_InFile;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  * Created by okten29 on 11/26/18.
  */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Worker {
 
     String name;

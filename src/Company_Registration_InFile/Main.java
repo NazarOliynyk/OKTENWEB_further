@@ -12,11 +12,12 @@ public class Main {
 
     static Reader r = new Reader();
 
-    static FileIO fileIO = new FileIO();
+    static IO io = new IO();
 
-    static File file = fileIO.createFile();
+    static File file = io.createFile();
 
-     static TreeSet<Company> companies = fileIO.readFromFile(file);
+
+        static TreeSet<Company> companies = io.readCompanies(file);
 
     //static TreeSet<Company> companies = new TreeSet<>();
 
@@ -40,7 +41,8 @@ public class Main {
             company.setName(name);
             company.setDepartments(departments);
             companies.add(company);
-            fileIO.printIntoFile(file, companies);
+            io.deleteAll(file);
+            io.writeCompanies(file, companies);
         }
         return companies;
     }
@@ -64,7 +66,8 @@ public class Main {
             r.reply("The company '" + name+"' does not exist!");
             return companies;
         }
-        fileIO.printIntoFile(file, companies);
+        io.deleteAll(file);
+        io.writeCompanies(file, companies);
         return companies;
     }
 
@@ -106,7 +109,8 @@ public class Main {
             department.setWorkers(workers);
             departments.add(department);
             companies.add(company);
-            fileIO.printIntoFile(file, companies);
+            io.deleteAll(file);
+            io.writeCompanies(file, companies);
         }
         return company;
     }
@@ -132,7 +136,8 @@ public class Main {
             r.reply("The department '" + name+"' does not exist!");
             return null;
         }
-        fileIO.printIntoFile(file, companies);
+        io.deleteAll(file);
+        io.writeCompanies(file, companies);
         return company;
     }
 
@@ -169,7 +174,8 @@ public class Main {
         departments.add(department);
         company.setDepartments(departments);
         companies.add(company);
-        fileIO.printIntoFile(file, companies);
+        io.deleteAll(file);
+        io.writeCompanies(file, companies);
         return department;
     }
 
@@ -196,7 +202,8 @@ public class Main {
             r.reply("The worker '"+name+"' does not exist in department '"+department.getName()+"' of company '"+company.getName()+"'");
             return worker;
         }
-        fileIO.printIntoFile(file, companies);
+        io.deleteAll(file);
+        io.writeCompanies(file, companies);
         return worker;
     }
 
@@ -260,6 +267,8 @@ public class Main {
         while (true) {
             r.mainMenu(request);
             if (r.responseMainMenu == null) {
+                io.deleteAll(file);
+                io.writeCompanies(file, companies);
                 return false;
             } else if (r.responseMainMenu.equals("A")) {
                 r.addCompany();
