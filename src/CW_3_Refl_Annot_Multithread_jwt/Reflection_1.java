@@ -114,15 +114,25 @@ public class Reflection_1 {
             method.getReturnType()+" "+
             method.getModifiers()); // should be getParametrCount(); !!
         }
+        for (Method method : methods) {
+            System.out.println("with parameters"+method.getName()+" "+
+                    method.getReturnType()+" "+
+                    method.getParameters()); // should be getParametrCount(); !!
+        }
 
         // all declared constructors
         System.out.println("------------constructors---------");
         Constructor<?>[] constructors = userClass.getDeclaredConstructors();
         for (Constructor<?> constructor : constructors) {
 
-            Type[] types = constructor.getParameterTypes();
-           // Parameter[] parameters = constructor.getPapameters();
+
+            java.lang.reflect.Parameter[] parameters = constructor.getParameters();
+
             // it shows in console - args0, args1 ...
+            for (java.lang.reflect.Parameter parameter : parameters) {
+                System.out.println("parameter names - "+parameter.getName());
+            }
+            Type[] types = constructor.getParameterTypes();
             for (Type type: types) {
                 System.out.println(type.toString());
             }
