@@ -1,4 +1,6 @@
-package CW_3_Refl_Annot_Multithread_jwt;
+package Lecture_3_Refl_Annot_Multithread_jwt;
+
+
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -19,4 +21,5 @@ public @interface ValidateId {
     String message();   // could be String message() defauld " ERROR";
     int defaultId();    //          int defaultId() default 999;
 }
+
 

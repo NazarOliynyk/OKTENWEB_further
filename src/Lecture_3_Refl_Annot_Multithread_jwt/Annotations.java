@@ -1,6 +1,5 @@
-package CW_3_Refl_Annot_Multithread_jwt;
+package Lecture_3_Refl_Annot_Multithread_jwt;
 
-import org.omg.Dynamic.Parameter;
 
 import java.lang.reflect.Field;
 
@@ -113,3 +112,4 @@ public class Annotations {
         }
     }
 }
+

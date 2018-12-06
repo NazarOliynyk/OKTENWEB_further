@@ -1,6 +1,4 @@
-package CW_3_Refl_Annot_Multithread_jwt;
-
-import org.omg.Dynamic.Parameter;
+package Lecture_3_Refl_Annot_Multithread_jwt;
 
 import java.lang.reflect.*;
 
@@ -94,28 +92,28 @@ public class Reflection_1 {
                 field.set(user, 1000);
             }
         }
-            System.out.println("user after changing - "+user);
+        System.out.println("user after changing - "+user);
 
-            // to create a reflection of an object
+        // to create a reflection of an object
 
-            Class<User> userClass = User.class;
+        Class<User> userClass = User.class;
 
-             User defaultUser= userClass.getDeclaredConstructor().newInstance(); // with no param or with them
-             User allArgsUser= userClass.getDeclaredConstructor(int.class, String.class)
-                    .newInstance(999, "kokos");
-            System.out.println(allArgsUser);
+        User defaultUser= userClass.getDeclaredConstructor().newInstance(); // with no param or with them
+        User allArgsUser= userClass.getDeclaredConstructor(int.class, String.class)
+                .newInstance(999, "kokos");
+        System.out.println(allArgsUser);
 
-            // getting declared methods
+        // getting declared methods
 
         Method[] methods =  userClass.getDeclaredMethods();
 
         for (Method method : methods) {
             System.out.println(method.getName()+" "+
-            method.getReturnType()+" "+
-            method.getModifiers()); // should be getParametrCount(); !!
+                    method.getReturnType()+" "+
+                    method.getModifiers()); // should be getParametrCount(); !!
         }
         for (Method method : methods) {
-            System.out.println("with parameters"+method.getName()+" "+
+            System.out.println("with parameters "+method.getName()+" "+
                     method.getReturnType()+" "+
                     method.getParameters()); // should be getParametrCount(); !!
         }
@@ -141,3 +139,4 @@ public class Reflection_1 {
 
     }
 }
+
